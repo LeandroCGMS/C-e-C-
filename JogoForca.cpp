@@ -39,13 +39,19 @@ int main(){
             }
 
             if(acertos == 11){
-                cout << "\nParabéns! Você acertou todas as letras, antes do seu corpo ser lançado na forca.";
+                cout << "\nParabéns! Você acertou todas as letras, antes a tempo.";
                 return 0;
             }
 
             if(incorrencia == 9){
                 corpoNaForca++;
             }
+        }
+
+        if(acertos == 1){
+                    cout << "\n" << acertos << " acerto.";
+        } else if(acertos > 1){
+            cout << "\n\n" << acertos << " acertos.";
         }
         cout << "\n";
 
@@ -60,7 +66,7 @@ int main(){
                 break;
             case 3:
                 cout << "\n3º membro: braço direito já está na forca.\n";
-                system("pause");
+                //system("pause");
                 break;
             case 4:
                 cout << "\n4º membro: perna esquerda já está na forca.\n";
@@ -72,7 +78,7 @@ int main(){
                 break;
             case 6:
                 cout << "\nYOU LOSE IN HELL!!! - Você está morto.\n";
-                system("exit");
+                return 0;
                 break;
         }
 
