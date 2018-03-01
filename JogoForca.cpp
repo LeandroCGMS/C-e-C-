@@ -39,7 +39,7 @@ int main(){
             }
 
             if(acertos == 11){
-                cout << "\nParabéns! Você acertou todas as letras, antes a tempo.";
+                cout << "\nParabéns! Você acertou todas as letras a tempo.";
                 return 0;
             }
 
