@@ -135,7 +135,6 @@ namespace JogoForca
                         Console.WriteLine("\nYOU LOSE IN HELL!!! - Você está morto.\n");
                         Console.ReadLine();
                         Environment.Exit(0);
-                        break;
                 }
 
             }
