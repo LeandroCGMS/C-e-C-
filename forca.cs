@@ -35,10 +35,10 @@ namespace JogoForca
                 int incorrencia = 0;
                 char[] trocaLetras = new char[15];
 
-                for(int i = 0; i < trocaLetras.Length; i++)
+                /*for(int i = 0; i < trocaLetras.Length; i++)
                 {
                     trocaLetras[i] = '_';
-                }
+                }*/
 
 
                 for (int i = 1; i < trocaLetras.Length; i++)
