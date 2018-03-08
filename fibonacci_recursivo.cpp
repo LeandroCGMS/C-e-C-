@@ -11,7 +11,7 @@ void fib(int termo);
 int main(){
     int termo;
     setlocale(LC_ALL,"Portuguese");
-    cout << "\t\tFalta apenas a opção de reexecutar.\n\t\t\Gerador de Sequência Fibonacci\n\n\t\tDigite o termo final da sequência a ser visualizada.\n\t\t\t\t\t";
+    cout << "\t\t\Gerador de Sequência Fibonacci\n\n\t\tDigite o termo final da sequência a ser visualizada.\n\t\t\t\t\t";
     cin >> termo;
     fib(termo);
     cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
