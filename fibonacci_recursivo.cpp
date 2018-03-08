@@ -20,6 +20,7 @@ int main(){
 
 void fib(int termo){
     int trocaTermo2 = 0;
+    int trocaTermo1 = 0;
     int nTermo = termo; // SEMPRE 3
 	if(termo<=0){
 		cout << "Não pode haver ordem zero ou negativa.";
@@ -35,24 +36,25 @@ void fib(int termo){
     //return fib(termo-1) + fib(termo-2);
     if(termo > 2 && cont == 3){
         cout << "Sequência de Fibonacci até o " << termo << "º elemento: " << Termo1 << ", " << Termo2 << ", ";
-        Termo1 = Termo2; // 0 PASSOU A SER 1
-        Termo2 += Termo1; // 1 PASSOU A SER 2
-         cout << Termo2 << ", "; // 0, 1, 2
+        Termo2 += Termo1;                                                       //0              //1
+         cout << Termo2 << ", ";
+         Termo1 =  Termo2;
          if(termo == 3 && cont == 3){
             cout << "\b\b. ou ...";
          }
     }
 
     if(termo > 2 && cont > 3){
-        //Termo1 = Termo2;
-        //Termo2 += Termo1;
-        trocaTermo2 = Termo2;
         Termo2 += Termo1;
         cout << Termo2 << ", ";
+        trocaTermo1 = Termo1;
+        Termo1 = Termo2;
+        Termo2 = trocaTermo1;
+
         if(cont == nTermo){
             cout << "\b\b. ou ...";
         }
-        Termo1 =  trocaTermo2;
+
     }
 
     cont++;
