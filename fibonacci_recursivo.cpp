@@ -50,7 +50,7 @@ void fib(int termo){
         Termo2 += Termo1;
         cout << Termo2 << ", ";
         if(cont == nTermo){
-            cout << "\b\b.";
+            cout << "\b\b. ou ...";
         }
         Termo1 =  trocaTermo2;
     }
