@@ -26,11 +26,11 @@ void fib(int termo){
 		 //COLOCAR FUNÇÃO DE RETORNO A TELA PRINCIPAL
 	}
     if(termo < 2){
-        cout << termo<<"º elemento de Fibonacci: "<< "0.";
+        cout << termo<<"º elemento de Fibonacci: "<< "0. ou ...";
     }
 
     if (termo == 2){
-    	cout << "Sequência de Fibonacci até o "<<termo<<"º elemento: "<<"0, 1.";
+    	cout << "Sequência de Fibonacci até o "<<termo<<"º elemento: "<<"0, 1. ou ...";
 	}
     //return fib(termo-1) + fib(termo-2);
     if(termo > 2 && cont == 3){
@@ -39,7 +39,7 @@ void fib(int termo){
         Termo2 += Termo1; // 1 PASSOU A SER 2
          cout << Termo2 << ", "; // 0, 1, 2
          if(termo == 3 && cont == 3){
-            cout << "\b\b.";
+            cout << "\b\b. ou ...";
          }
     }
 
