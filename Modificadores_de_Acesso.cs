@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +19,13 @@ namespace Modificadores_de_Acesso
 
             Console.WriteLine("A idade é : {0}", idade);
             Console.WriteLine("O peso é: {0:F}", peso);
+
+
+            Animal.Mensagem();
+
+            Console.WriteLine(Math.PI.ToString());
             Console.ReadLine();
+
         }
     }
 }
