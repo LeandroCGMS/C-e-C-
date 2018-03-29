@@ -24,7 +24,7 @@ namespace Tratamento_de_Exceções
                 int fator1 = Int32.Parse(txtFator1.Text);
                 int fator2 = Int32.Parse(txtFator2.Text);
                 int produto = fator1 * fator2;
-                if (fator1 * fator2 > Int32.MaxValue || fator1 * fator2 < 0)
+                if (fator1 * fator2 > Int32.MaxValue)
                 {
                     throw new Exception();
                 } else
