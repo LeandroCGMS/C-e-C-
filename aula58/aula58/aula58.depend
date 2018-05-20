@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1525657770 source:/home/leandro/C++/aula58/aula58/main.cpp
+	<iostream>
+	<vector>
+
